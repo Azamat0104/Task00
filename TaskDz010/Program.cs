@@ -9,12 +9,22 @@
 Console.Write("Введи трёхзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 int finishNumber = GetNumber(number);
-Console.Write($"Середине число => {finishNumber}");
+//Console.Write($"Середине число => {finishNumber}");
 
 int GetNumber(int number)
 {
+    if (number < 1000){
     int result = (number / 10) % 10;
-    return result;
+    return result;}
+    else {
+        return 0;
+    }
 }
-
+if (finishNumber == 0)
+{
+    Console.WriteLine("Error");
+}
+else{
+    Console.Write($"Середине число => {finishNumber}");
+}
 
