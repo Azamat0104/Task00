@@ -17,10 +17,10 @@ int GetNumber(int number)
     int result = (number / 10) % 10;
     return result;}
     else {
-        return 0;
+        return -1;
     }
 }
-if (finishNumber == 0)
+if (finishNumber == -1)
 {
     Console.WriteLine("Error");
 }
