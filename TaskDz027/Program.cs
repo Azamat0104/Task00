@@ -8,27 +8,27 @@
 
 
 
-Console.Write("Введите число N: ");
+Console.Write("Введите трехзначные числа: ");
 int numberN = Convert.ToInt32(Console.ReadLine());
-
-
+//Console.Write("Цикл: ");
+//int n = Convert.ToInt32(Console.ReadLine());
 
 int SumNumber(int numberN)
 {
 
     int variable;
     int result = 0;
-    int n;
-    if (numberN > 999)
+    //int n;
+    /*if (numberN > 999)
     {
         n = 4;
     }
     else
     {
         n = 3;
-    }
+    }*/
     
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < 4; i++)
     {
         variable = numberN - numberN % 10;
         result = result + (numberN - variable);
